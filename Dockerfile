@@ -5,7 +5,7 @@ FROM php:8.1-apache
 COPY . /var/www/html
 
 # Expose port 80 to the outside world
-EXPOSE 4567
+EXPOSE 80
 
 # Start Apache server in the foreground
 CMD ["apache2-foreground"]
