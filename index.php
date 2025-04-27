@@ -1,2 +1,4 @@
 <?php
-echo "Hello, World!-- webhook worked2";
+echo "All environment variables:\n";
+print_r($_ENV);
+?>
