@@ -1,4 +1,8 @@
 <?php
-echo "All environment variables test:\n";
-print_r($_ENV);
+// Only echo necessary safe outputs
+echo "App is running.\n";
+
+// Optionally use secrets internally, but don't echo them publicly.
+$my_secret = getenv('testkey1');
+// Use $my_secret securely inside your app logic
 ?>
